@@ -1,184 +1,182 @@
-.header_para { 
-    text-align: center;
+@mainColor: #F4C3F0;
+@secondaryColor: #DCC4F5;
+@thirdColor: #C4F5D4;
+@backgroundColor: #FFF4FA;
+@textDarkColor: #A06B9B;
+
+.centeredText {
+
+  text-align: center;
+
 }
+
 .centered {
-    
-    margin-left: auto;
-    
-    margin-right: auto;
-    
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
+
+
+
+.main-area {
+
+  border: 4px solid @textDarkColor;
+
+  background-color: @secondaryColor;
+
+  margin-bottom: 100px;
+
+}
+
+
+
+
+.centered {
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
+
+
+.cards {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  margin-top: -1em;
+
+  padding: 5px;
+
+}
+
+.card {
+
+  background: @backgroundColor;
+
+  margin-bottom: 2em;
+
+  margin-top: 2em;
+
+  max-height: 300px;
+
+  flex: 1 4 400px;
+
+  position: relative; 
+
+}
+
+.card a {
+
+  color: @textDarkColor;
+
+  text-decoration: none;
+
+}
+
+
+
+.card-content {
+
+  padding: 2em;
+
+  margin-top: 0;
+
+  margin-bottom: 0.5em;
+
+  font-weight: normal;
+
+  text-align: left;
+
+}
+
+h2 {
+
+
+  font-size: large;
+  text-align: left;
+
+
+}
+
+.card-content p {
+
+  font-size: 80%;
+
+  font-weight: bolder;
+  margin: -1.5em;
+
+}
+
+.pixHolder {
+
+  text-align: center;
+
+  background-color: @mainColor;
+
+}
+
+
+
+.pixHolder img {
+
+  padding-top: 5px;
+
+  width: 80%;
+
+  height: 200px;
+
+  border-radius: 15px;
+
+}
+
+
+
+h3,ul {
+
+  position: relative;
+
+  top: -30px;
+
+}
+
+.footer {
+  background-color: @mainColor;
+  color: @textDarkColor;
+  font-size:x-large; 
+  text-align: center;
+  position:static;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  height: 70px;
+  padding-top: 30px;
+
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 0 1 400px;
+    max-width: 400px;
+    margin-bottom: 1em;
   }
-  
-  .main-area {
-    margin-top: 50px;
-    border: 4px solid #555960;
-    
-    background-color: #000000;
-    
+}
+
+@media screen and (max-width: 599px) {
+  .card {
+    flex: 0 1 calc(45% - 0.1em);
+    margin-bottom: 1em;
   }
-    
-    
-    
-    
-  .centered {
-    
-    margin-left: auto;
-    
-    margin-right: auto;
-    
-  }
-    
-    
-  .gallery {
-    
-    display: flex;
-    
-    flex-wrap: wrap;
-    
-    justify-content: space-between;
-    
-    margin-top: -1em;
-    
-    padding: 5px;
-    
-  }
-    
-  .box {
-  
-    background: white;
-    
-    margin-bottom: 2em;
-    
-    margin-top: 2em;
-    
-    max-height: 300px;
-    
-    flex: 1 1 1000px;
-    
-    position: relative; /* to position items inside card */
-    
-  }
-    
-  .box a {
-    
-    color: black;
-    
-    text-decoration: none;
-    
-  }
-    
-    
-    
-  .box_content {
-    
-    padding: 1.4em;
-    
-    margin-top: 0;
-    
-    margin-bottom: 0.5em;
-    
-    font-weight: normal;
-    
-  }
-  
-  h2 {
-  
+  .masthead {
+    height: 125px;
+    padding-top: 10px;
     font-size: large;
-    
   }
-    
-  .box_content p {
-    
-    font-size: 80%;
-    
-    font-weight: bolder;
-    
-  }
-    
-  .picture {
-    
-    text-align: center;
-    
-    background-color: #8e6f3e;
-    
-  }
-    
-    
-    
-  .pixHolder img {
-    
-    padding-top: 5px;
-    
-    width: 80%;
-    
-    height: 150px;
-    
-    border-radius: 15px;
-    
-  }
-    
-    
-    
-  h3 {
-    
-    position: relative;
-    
-    top: -30px;
-    
-  }
-
-  .picture_box { 
-    background-color: transparent;
-    width: 200px; 
-    height: 300px; 
-    perspective: 1000px;
-  }
-
-
-  .box_inner { 
-    position: relative; 
-    width: 100%; 
-    height: 100%; 
-    text-align: center; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .box_front { 
-    position: absolute; 
-    width: 100%; 
-    height: 100%; 
-  }
-  
-  .box_front { 
-    background-color: #cfb991; 
-    color: black;
-  }
-  
-
-  @media screen and (min-width: 700px) {
-    .box {
-      flex: 0 1 200px;
-      max-width: 200px;
-      margin-bottom: 1em;
-    }
-  }
-
-  
-  @media screen and (max-width: 599px) {
-    .box {
-      flex: 0 1 calc(45% - 0.1em);
-      margin-bottom: 1em;
-    }
-    .masthead {
-      height: 125px;
-      padding-top: 10px;
-      font-size: large;
-    }
-  }
-
-
-  @media screen and (min-width: 800px) {
-    .gallery {
-      margin-top: inherit;
-    }
-  }
+}

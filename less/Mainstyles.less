@@ -4,9 +4,10 @@
 @backgroundColor: #FFF4FA;
 @textDarkColor: #A06B9B;
 
-body { 
+body, html { 
   margin: 0;
   background-color: @backgroundColor;
+  height: 100%;
 }
 nav {
     position: absolute;
@@ -41,10 +42,6 @@ nav {
     color: @textDarkColor;
     display: block;
   }
-
-  nav > ul a:link {
-    color: @secondaryColor;
-  }
   
   nav > ul a:hover {
     color: @secondaryColor;
@@ -58,22 +55,24 @@ nav {
 
   .header_para { 
     text-align: center;
+    color: @textDarkColor;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
-.footer {
-  background-color: @mainColor;
-  color: @textDarkColor;
-  font-size:x-large; 
-  text-align: center;
-  position: absolute; 
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  left: 0;
-  height: 70px;
+// .footer {
+//   background-color: @mainColor;
+//   color: @textDarkColor;
+//   font-size:x-large; 
+//   text-align: center;
+//   position:absolute;
+//   bottom: 0;
+//   width: 100%;
+//   margin: 0;
+//   left: 0;
+//   height: 70px;
 
-
-}
+// }
 
   @media screen and (min-width: 700px) {
 
